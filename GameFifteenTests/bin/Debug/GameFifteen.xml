@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GameFifteen</name>
+    </assembly>
+    <members>
+        <member name="T:GameFifteen.GameEngine">
+            <summary>
+            Class that prepares a new game and support existing one.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameEngine.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GameFifteen.GameEngine"/> class. Sets base parameters for new game, scoreboard and field.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameEngine.PlayGame">
+            <summary>
+            Support existing game. Parsing commands and checking if matrix is arranged.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameEngine.InitializeGame">
+            <summary>
+            Calls the renderer to print the opening message, and the game-field
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameEngine.ParseInput(System.String)">
+            <summary>
+            Parses commands based on string messages.
+            </summary>
+            <param name="inputString">Command to be executed.</param>
+        </member>
+        <member name="M:GameFifteen.GameEngine.AddNewScore(System.String)">
+            <summary>
+            Adds nickname and score to the current engine's scoreboard.
+            </summary>
+            <param name="nickname">Nickname for current player to be added to the scoreboard</param>
+        </member>
+        <member name="T:GameFifteen.GameField">
+            <summary>
+            Public class for maintaining the game field.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameField.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GameFifteen.GameField"/> class. Sets basic field dimensions and triggers mine generating sequence.
+            </summary>
+            <param name="size">Sets size of the field.</param>
+        </member>
+        <member name="M:GameFifteen.GameField.MakeMove(System.Int32)">
+            <summary>
+            Make move calculations and execute move if input data is valid.
+            </summary>
+            <param name="numberToMove">Number from field that is chosen to be moved.</param>
+            <returns>If number is successfully moved or not.</returns>
+        </member>
+        <member name="M:GameFifteen.GameField.IsCurrentMatrixArranged">
+            <summary>
+            Checks if current matrix is arranged or not.
+            </summary>
+            <returns>True if matrix arranged and False if matrix is not arranged</returns>
+        </member>
+        <member name="M:GameFifteen.GameField.ToString">
+            <summary>
+            Override ToString for drawing the matrix field.
+            </summary>
+            <returns>String value, visualizing the game-field</returns>
+        </member>
+        <member name="M:GameFifteen.GameField.FindPosition(System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            Searches the field for a given number and returns it's current row and column
+            </summary>
+            <param name="searchedNumber">The number to be searched for</param>
+            <param name="numberRow">The variable, where the searched number's current row should be stored</param>
+            <param name="numberCol">The variable, where the searched number's current column should be stored</param>
+        </member>
+        <member name="M:GameFifteen.GameField.GenerateField">
+            <summary>
+            Generates a field with numbers at random position
+            </summary>
+        </member>
+        <member name="P:GameFifteen.GameField.Size">
+            <summary>
+            Gets the current game-field's rows and columns.
+            </summary>
+        </member>
+        <member name="P:GameFifteen.GameField.MoveCounter">
+            <summary>
+            Gets the moves made in the current game, used for determining the score.
+            </summary>
+        </member>
+        <member name="T:GameFifteen.GameFifteen">
+            <summary>
+            Class, containing the main method for running the game.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameFifteen.Main">
+            <summary>
+            Main method. triggers the GameEngine class.
+            </summary>
+        </member>
+        <member name="T:GameFifteen.GameRenderer">
+            <summary>
+            Public class used for all console outputs messages and drawings.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameRenderer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GameFifteen.GameRenderer"/> class.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameRenderer.RenderWelcomeMessage">
+            <summary>
+            Prints welcome message and instructions on console
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameRenderer.RenderObject(System.Object)">
+            <summary>
+            Prints object on console via overridden ToString method
+            </summary>
+            <param name="obj">Object/field to be drawn on console.</param>        
+        </member>
+        <member name="M:GameFifteen.GameRenderer.Clear">
+            <summary>
+            Clears console from any symbols.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameRenderer.RenderInvalidCommandMessage">
+            <summary>
+            Prints "Invalid command" message on console, when input command is invalid.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameRenderer.RenderGoodbyeMessage">
+            <summary>
+            Prints goodbye message on console.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.GameRenderer.RenderWinMessage(System.Int32)">
+            <summary>
+            Prints win message on console, when game is won.
+            </summary>
+            <param name="moveCounter">Number of moves played until matrix is arranged.</param>   
+        </member>
+        <member name="M:GameFifteen.GameRenderer.RenderCommandMessage">
+            <summary>
+            Prints input command message on console.
+            </summary>
+        </member>
+        <member name="T:GameFifteen.ScoreBoard">
+            <summary>
+            Creates new scoreboard or maintain existing one. 
+            </summary>
+        </member>
+        <member name="M:GameFifteen.ScoreBoard.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GameFifteen.ScoreBoard"/> class. The created instance holds no initial values.
+            </summary>
+        </member>
+        <member name="M:GameFifteen.ScoreBoard.AddToScoreBoard(System.String,System.Int32)">
+            <summary>
+            Adds new entry in scoreboard list.
+            </summary>
+            <param name="nickname">Name of player, finished game.</param>
+            <param name="movesCount">Score of player, finished game.</param>        
+        </member>
+        <member name="M:GameFifteen.ScoreBoard.ToString">
+            <summary>
+            Override ToString method, for user-friendly scoreboard view.
+            </summary>
+            <returns>String value that visualizes the scoreboard.</returns>
+        </member>
+        <member name="M:GameFifteen.ScoreBoard.RemoveLastScoresFromBoard">
+            <summary>
+            If the current scoreboard list contains more than the maximum number of elements
+            The unnecessary ones are removed.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,15 @@
+D:\__TELERIK\QualityCode\Neodymium\GameFifteen\GameFifteenTests\bin\Debug\GameFifteenTests.dll
+D:\__TELERIK\QualityCode\Neodymium\GameFifteen\GameFifteenTests\bin\Debug\GameFifteenTests.pdb
+D:\__TELERIK\QualityCode\Neodymium\GameFifteen\GameFifteenTests\bin\Debug\GameFifteen.exe
+D:\__TELERIK\QualityCode\Neodymium\GameFifteen\GameFifteenTests\bin\Debug\GameFifteen.pdb
+D:\__TELERIK\QualityCode\Neodymium\GameFifteen\GameFifteenTests\obj\Debug\GameFifteenTests.csprojResolveAssemblyReference.cache
+D:\__TELERIK\QualityCode\Neodymium\GameFifteen\GameFifteenTests\obj\Debug\GameFifteenTests.dll
+D:\__TELERIK\QualityCode\Neodymium\GameFifteen\GameFifteenTests\obj\Debug\GameFifteenTests.pdb
+C:\Users\Georgi\Desktop\GameFifteen\GameFifteen\GameFifteenTests\bin\Debug\GameFifteenTests.dll
+C:\Users\Georgi\Desktop\GameFifteen\GameFifteen\GameFifteenTests\bin\Debug\GameFifteenTests.pdb
+C:\Users\Georgi\Desktop\GameFifteen\GameFifteen\GameFifteenTests\bin\Debug\GameFifteen.exe
+C:\Users\Georgi\Desktop\GameFifteen\GameFifteen\GameFifteenTests\bin\Debug\GameFifteen.pdb
+C:\Users\Georgi\Desktop\GameFifteen\GameFifteen\GameFifteenTests\obj\Debug\GameFifteenTests.csprojResolveAssemblyReference.cache
+C:\Users\Georgi\Desktop\GameFifteen\GameFifteen\GameFifteenTests\obj\Debug\GameFifteenTests.dll
+C:\Users\Georgi\Desktop\GameFifteen\GameFifteen\GameFifteenTests\obj\Debug\GameFifteenTests.pdb
+C:\Users\Georgi\Desktop\GameFifteen\GameFifteen\GameFifteenTests\bin\Debug\GameFifteen.xml
